@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Form</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='database.css') }}">
+</head>
+<body>
+    <form action="/search_results" method="POST" class="search-bar">
+        <input type="search" name="keyword" id="searchInput" pattern=".*\S.*" required>
+        <button type="submit" class="search-btn">
+            <span>Search</span>
+        </button>
+    </form>
+</body>
+</html>

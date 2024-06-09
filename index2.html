@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Medlabs Dashboard</title>
+  <link rel="stylesheet" href="styler.css">
+</head>
+<body>
+  <header>
+    <h1>Medical Dashboard</h1>
+  </header>
+  
+  <aside class="sidebar">
+    <ul>
+  
+      <li><a href="/logout">Logout</a></li>
+    </ul>
+  </aside>
+  <div class="topnav">
+    <a class="active" href="/open_database">Integrated Database</a>
+    <a href="{{ url_for('settings') }}">Account Details</a>
+    <!-- Updated href attribute for the Documentation widget -->
+    <a href="/documentation">Documentation</a>
+  </div>
+
+  <section class="main-content">
+    <h2>Welcome Back!</h2>
+    <div class="dashboard-cards">
+      <div class="card">
+        <!-- Link to savedinfo.html -->
+        <a href="/savedinfo">View Medical Stats</a>
+      </div>
+      <div class="card">
+      
+        <a href="/calendar">Routine and Calendar</a>
+      </div>
+      <div class="card">
+       <a href="/statistics">data statistics </a>
+        <p></p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; Medical Dashboard. Developed by Medlabs.</p>
+  </footer>
+</body>
+</html>

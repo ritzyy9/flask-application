@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        .container {
+            max-width: 500px;
+            margin: 0 auto;
+            padding: 30px;
+            border: 1px solid #965151;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .input-group {
+            margin-bottom: 20px;
+        }
+
+        .input-group label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .input-group input {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .btn-save {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .btn-save:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form action="/submit_form" method="POST">
+            <div class="input-group">
+                <label for="field1"> Age:</label>
+                <input type="text" id="field1" name="age">
+            </div>
+            <div class="input-group">
+                <label for="field2">Weight in kg:</label>
+                <input type="text" id="field2" name="weight">
+            </div>
+            <div class="input-group">
+                <label for="field3">Amount of medicine consumed (1-100):</label>
+                <input type="text" id="field3" name="medicine">
+            </div>
+            <div class="input-group">
+                <label for="field4">Amount of first family members :</label>
+                <input type="text" id="field4" name="family_members">
+            </div>
+            <div class="input-group">
+                <label for="field5">how many leisure hours do you spend on average :</label>
+                <input type="text" id="field5" name="leisure_hours">
+            </div>
+            <button type="submit" class="btn-save">Enter</button>
+        </form>
+    </div>
+</body>
+</html>
